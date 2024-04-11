@@ -1,0 +1,11 @@
+name: collab-apps-v1
+on: push
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      -run: date
+      
+
+  
