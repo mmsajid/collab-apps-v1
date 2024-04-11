@@ -6,6 +6,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: date
+  windows:
+    runs-on: windows-latest
+    steps:
+    - run: date
+  mac-os:
+    needs: [ubuntu, windows]
+    runs-on: macos-latest
+    steps:
+    - run: date
+      
       
 
   
